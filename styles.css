@@ -62,7 +62,7 @@ body {
   box-shadow: 5px 5px 5px;
   background-color: #8760ea;
   padding: 5px;
-  float:left
+  float:left;
 }
 
 button:hover {
