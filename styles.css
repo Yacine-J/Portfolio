@@ -7,6 +7,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .titre-header{
   font-style: italic;
     font-family: 'Lilita One', cursive;
@@ -14,9 +15,11 @@
     height: 45px;
     margin-top: 20px;
 }
+
 h1 {
   color:#fa0505;
-}    
+} 
+
 .logo-twitter{
     display: flex;
     flex-wrap: wrap;
@@ -25,10 +28,11 @@ h1 {
     position:  relative;
     
 }
+
 body {
   height: 100%;
-  
 }
+
 .nom-metier{
   font-size: 35px;
   font-style: italic;
@@ -36,6 +40,7 @@ body {
   margin-top: 20px;
   color: rgb(166, 0, 255);
 }
+
 .A-propos{
   font-size: larger;
   margin-top: 40px;
@@ -47,6 +52,7 @@ body {
   padding: 5px;
   float:right;
 }
+
 .CV{
   font-size: larger;
   margin-top: 215px;
@@ -58,9 +64,11 @@ body {
   padding: 5px;
   float:left
 }
+
 button:hover {
   background-color: rgb(13, 135, 188);
 }
+
 button {
   display: inline-block;
   background-color: #2b0bb6;
@@ -77,4 +85,16 @@ button {
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
+}
+
+.proj{
+  font-size: larger;
+  margin-top: 215px;
+  margin-right: 20px;
+  width: 40%;
+  position: relative;
+  box-shadow: 5px 5px 5px;
+  background-color: #8760ea;
+  padding: 5px;
+  float: right;
 }
