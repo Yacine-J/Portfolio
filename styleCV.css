@@ -56,15 +56,3 @@ h1 {
 body {
   height: 200vh; 
 }
-#footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 5px;
-  background-color: #06525cbc;
-  color: #fff;
-  position: absolute;
-  bottom: -100vh;
-  width: 100%;
-  height: 35px;
-}
