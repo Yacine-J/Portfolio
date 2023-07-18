@@ -57,3 +57,23 @@ body {
   height: 200vh; 
   background-color: #45B3F1;
 }
+
+footer{
+  bottom: -100%;
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background-color:#06525cbc;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact{
+  font-style: italic;
+    font-family: 'Lilita One', cursive;
+    font-size: 30px;
+    height: 45px;
+  }
+  h2 {
+    color:#fa0505;
+  } 
