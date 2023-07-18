@@ -1,4 +1,4 @@
-.titre-portfolio {
+#titre-portfolio {
     width: 100%;
     height: 100px;
     background-color:#06525cbc;
@@ -30,7 +30,7 @@ h1 {
 }
 
 body {
-  height: 100%;
+  height: 150vh;
 }
 
 .nom-metier{
@@ -41,7 +41,7 @@ body {
   color: rgb(166, 0, 255);
 }
 
-.A-propos{
+#A-propos{
   font-size: larger;
   margin-top: 40px;
   margin-right: 20px;
@@ -53,9 +53,9 @@ body {
   float:right;
 }
 
-.CV{
+#Experiences{
   font-size: larger;
-  margin-top: 215px;
+  margin-top: 100px;
   margin-left: 20px;
   width: 40%;
   position: relative;
@@ -87,9 +87,9 @@ button {
   margin: 5px;
 }
 
-.proj{
+#Projets{
   font-size: larger;
-  margin-top: 215px;
+  margin-top: 280px;
   margin-right: 20px;
   width: 40%;
   position: relative;
@@ -97,4 +97,16 @@ button {
   background-color: #8760ea;
   padding: 5px;
   float: right;
+}
+#footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5px;
+  background-color: #45a1ff;
+  color: #fff;
+  position: absolute;
+  bottom: -50vh;
+  width: 100%;
+  height: 35px;
 }
