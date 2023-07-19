@@ -20,14 +20,7 @@ h1 {
   color:#fa0505;
 } 
 
-.logo-twitter{
-    display: flex;
-    flex-wrap: wrap;
-    height: 48px;
-    width: 48px;
-    position:  relative;
-    
-}
+
 
 body {
   height: 140vh;
@@ -120,7 +113,27 @@ footer{
     font-family: 'Lilita One', cursive;
     font-size: 30px;
     height: 45px;
+    
   }
+
   h2 {
     color:#fa0505;
   } 
+  
+.logo-twitter{
+    display: flex;
+    flex-wrap:nowrap;
+    height: 48px;
+    width: 48px;
+    position:  relative;
+}
+
+.logo-linkedin{
+    display: flex;
+    flex-wrap: wrap;
+    height: 48px;
+    width: 48px;
+    position:  relative;
+    margin-left: 10%;
+    
+}
