@@ -112,14 +112,9 @@ footer{
   font-style: italic;
     font-family: 'Lilita One', cursive;
     font-size: 30px;
-    height: 45px;
-    
-  }
+    height: 45px;    
+}
 
-  h2 {
-    color:#fa0505;
-  } 
-  
 .logo-twitter{
     display: flex;
     flex-wrap:nowrap;
