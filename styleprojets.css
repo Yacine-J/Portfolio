@@ -40,7 +40,7 @@ color:#fa0505;
 }    
 .logo-twitter{
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   height: 48px;
   width: 48px;
   position:  relative;
@@ -69,3 +69,11 @@ footer{
   h2 {
     color:#fa0505;
   } 
+  .logo-linkedin{
+    display: flex;
+    flex-wrap: wrap;
+    height: 48px;
+    width: 48px;
+    position:  relative;
+    margin-left: 10%;
+  }
