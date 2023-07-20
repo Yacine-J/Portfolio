@@ -140,3 +140,89 @@ footer{
   margin-left: 10%;
   
 }
+
+/* Pour les tablettes en mode paysage */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #titre-portfolio {
+    height: 80px;
+  }
+
+  .titre-header {
+    font-size: 36px;
+    height: 36px;
+    margin-top: 15px;
+  }
+
+  .nom-metier {
+    font-size: 28px;
+    margin-top: 15px;
+  }
+
+  #A-propos,
+  #Experiences,
+  #Projets {
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 90%;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 8px;
+    width: 150px;
+  }
+
+  footer {
+    height: 80px;
+  }
+
+  .contact {
+    font-size: 24px;
+    height: 36px;
+    margin-top: 8px;
+  }
+}
+
+/* Pour les tablettes en mode portrait */
+@media (min-width: 600px) and (max-width: 767px) {
+  #titre-portfolio {
+    height: 60px;
+  }
+
+  .titre-header {
+    font-size: 30px;
+    height: 30px;
+    margin-top: 10px;
+  }
+
+  .nom-metier {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  #A-propos,
+  #Experiences,
+  #Projets {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 5px;
+    width: 90%;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 6px;
+    width: 120px;
+  }
+
+  footer {
+    height: 60px;
+  }
+
+  .contact {
+    font-size: 20px;
+    height: 30px;
+    margin-top: 6px;
+  }
+}
