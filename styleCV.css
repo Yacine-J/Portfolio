@@ -184,6 +184,7 @@ footer{
 
   #cv img {
     max-height: 100vh;
+    max-width: 80%;
     margin-top: 15px;
     margin-left: 5%;
   }
