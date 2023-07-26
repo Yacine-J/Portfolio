@@ -139,89 +139,29 @@ footer{
   cursor : pointer;
 }
 
-/* Pour les tablettes en mode paysage */
-@media (min-width: 768px) and (max-width: 1024px) {
-  button {
-    width: 180px;
-    font-size: 16px;
-  }
-
-  .titre-portfolio {
-    height: 80px;
-  }
-  .logo{
-    width: 150px;
-    height: 150px;
-    font-size: 48px;
-  }
-  .titre-header {
-    font-size: 36px;
-    height: 36px;
-    margin-top: 15px;
-  }
-
-  .contact {
-    font-size: 24px;
-    height: 36px;
-  }
-
-  footer {
-    bottom: -60%;
-    height: 80px;
-  }
-
-  .Projet1,
-  .Projet2,
-  .Projet3 {
-    width: 90%;
-  }
-}
-
-/* Pour les tablettes en mode portrait */
-@media (min-width: 600px) and (max-width: 767px) {
-  button {
-    width: 150px;
-    font-size: 14px;
-  }
-
-  .titre-portfolio {
-    height: 60px;
-  }
-  .logo{
-    width: 150px;
-    height: 150px;
-    font-size: 48px;
-  }
-  .titre-header {
-    font-size: 30px;
-    height: 30px;
-    margin-top: 10px;
-  }
-
-  .contact {
-    font-size: 20px;
-    height: 30px;
-  }
-
-  footer {
-    bottom: -45%;
-    height: 60px;
-  }
-
-  .Projet1,
-  .Projet2,
-  .Projet3 {
-    width: 90%;
-  }
-}
 /* Media queries pour les smartphones */
 @media screen and (max-width: 767px) {
-  .titre-portfolio {
-    flex-direction: column;
-    height: auto;
+.titre-portfolio {
+  flex-direction: column;
+  height: auto;
+  align-items: center;
+}
+button {
+  width: 120px;
+  font-size: 12px;
+}
+.logo {
+  margin-bottom: 10px;
   }
-
-  .logo {
-    margin-bottom: 10px;
-  }
+body {
+  height: 100vh;
+}
+.Projet1,
+.Projet2,
+.Projet3 {
+  width: 50%;
+}
+footer{
+  bottom: -90%;
+}
 }
