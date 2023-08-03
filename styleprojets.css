@@ -70,7 +70,7 @@ background-color: #45B3F1;
 }
 
 footer{
-  bottom: -75%;
+  bottom: -150%;
   position: absolute;
   width: 100%;
   height: 100px;
@@ -96,48 +96,46 @@ footer{
     position:  relative;
     margin-left: 10%;
   }
-.Projet1{
-  display: block;
-  width: 100vh;
-  height: 300px;
-  margin-top: 30px;
-  margin-left: 20px;
-  background-color: beige;
-  box-shadow: 0px 5px 5px;
-  padding: 5px;
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  cursor : pointer;
+.d1 {
+  width: 3840px;
+  height: 720px;
+  background-color: #EDEDED;
+  background: url(./image-projet/36120212.webp);
+  background-size: contain;
+  animation: defilement1 12s linear infinite;
 }
-.Projet2{
-  display: block;
-  width: 100vh;
-  height: 300px;
-  margin-top: 30px;
-  margin-left: 20px;
-  background-color: beige;
-  box-shadow: 0px 5px 5px;
-  padding: 5px;
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  cursor : pointer;
+.conteneur1 {
+  overflow: hidden;
+  max-width: 960px;
+  margin: 50px auto;
+  box-shadow: 0px 15px 10px -5px #777;
 }
-.Projet3{
-  display: block;
-  width: 100vh;
-  height: 300px;
-  margin-top: 30px;
-  margin-left: 20px;
-  background-color: beige;
-  box-shadow: 0px 5px 5px;
-  padding: 5px;
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-  cursor : pointer;
+@keyframes defilement1 {
+  0%{transform: translate(0, 0);}
+  100%{transform: translate(-2880px, 0);}
 }
+.d2 {
+  width: 400%;
+  height: 0;
+  padding-top: 75%;
+  background-color: #EDEDED;
+  background: url(./image-projet/Sanstitre.webp);
+  background-size: contain;
+  animation: defilement1 12s linear infinite;
+}
+.conteneur2 {
+  max-width: 960px;
+  overflow: hidden;
+  margin: 50px auto;
+  box-shadow: 0px 0px 10px #777;
+}
+@keyframes defilement2 {
+  0%{transform: translate(0, 0);}
+  100%{transform: translate(-75px, 0);}
+}
+
+
+
 
 /* Media queries pour les smartphones */
 @media screen and (max-width: 767px) {
@@ -156,12 +154,10 @@ button {
 body {
   height: 100vh;
 }
-.Projet1,
-.Projet2,
-.Projet3 {
+.conteneur1, .conteneur2 {
   width: 50%;
 }
 footer{
-  bottom: -90%;
+  bottom: -110%;
 }
 }
