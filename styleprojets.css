@@ -154,7 +154,10 @@ button {
 body {
   height: 100vh;
 }
-.conteneur1, .conteneur2 {
+.conteneur1 {
+  width: 50%;
+}
+.conteneur2 {
   width: 50%;
 }
 footer{
