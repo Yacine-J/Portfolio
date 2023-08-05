@@ -53,7 +53,7 @@ body {
 #Apropos{
   font-size: larger;
   margin-top: 40px;
-  margin-left: 170px;
+  margin-left: 100px;
   width: 55%;
   position:relative;
   background-color: #8760eaa0;
@@ -100,6 +100,7 @@ footer{
   height: 45px;
   margin-top: 10px;
   margin-left: 10px;
+  color:#fa0505
 }
 .logo-twitter{
   display: flex;
