@@ -73,7 +73,7 @@ button {
 }
 body {
   height: 200vh; 
-  background-color: #45B3F1;
+  background: linear-gradient(to bottom right, blue, pink);
 }
 
 footer{

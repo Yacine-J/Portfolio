@@ -62,8 +62,8 @@ button {
   margin-top: 20px;
 }
 body {
-  height: 100vh;
-  background-color: #45B3F1;
+  height: 250vh;
+  background: linear-gradient(to bottom right, blue, pink);
 }
 footer{
   bottom: -150%;
@@ -144,7 +144,7 @@ button {
   margin-bottom: 10px;
   }
 body {
-  height: 100vh;
+  height: 200vh;
 }
 .conteneur1 {
   width: 50%;

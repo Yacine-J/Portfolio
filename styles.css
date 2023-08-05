@@ -37,7 +37,7 @@ h1 {
 } 
 body {
   height: 140vh;
-  background-color: #45B3F1;
+  background: linear-gradient(to bottom right, blue, pink);
 }
 .nom-metier{
   font-size: 35px;
