@@ -1,3 +1,8 @@
+body {
+  height: 100vh;
+  background: linear-gradient(to bottom right, blue, pink);
+}
+/* section header complet */
 #titre-portfolio {
   width: 100%;
   height: 100px;
@@ -8,6 +13,7 @@
   justify-content: space-between;
   z-index: 1;
 }
+/* logo avec initiales */
 .logo{
   width: 100px;
   height: 100px;
@@ -24,21 +30,81 @@
 .initiales{
   text-transform: uppercase;
 }
-
+/* titre portfolio rouge */
 .titre-header{
   font-style: italic;
   font-family: 'Lilita One', cursive;
   font-size: 45px;
   height: 45px;
   margin-top: 20px;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
 }
 h1 {
   color:#fa0505;
 } 
-body {
-  height: 100vh;
-  background: linear-gradient(to bottom right, blue, pink);
+/* Position fixe pour le conteneur du bouton */
+.menu-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
 }
+/* Style du bouton burger */
+.menu-burger {
+  width: 40px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.menu-burger span {
+  width: 100%;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #4cbddfde;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style du menu caché par défaut */
+.menu {
+  display: none;
+  overflow: hidden; /* Cacher tout contenu dépassant de la boîte */
+  max-height: 0; /* Définir la hauteur initiale à 0 */
+  transition: max-height 0.3s ease; /* Ajouter une transition fluide */
+}
+/* Montrer le menu déroulant lorsqu'il est ouvert */
+.menu.active {
+  display: block;
+  max-height: 200px; /* Définir une hauteur appropriée pour le menu déroulant */
+  background-color: #ff00002d;
+}
+button:hover {
+  background-color: rgb(13, 135, 188);
+}
+button {
+  display: inline-block;
+  background-color: #2b0bb6;
+  border-radius: 10px;
+  border: 4px double #cccccc;
+  color: #eeeeee;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  width: 230px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  margin-top: 20px;
+}
+/* section nom et apropos */
 .nom-metier{
   font-size: 35px;
   font-style: italic;
@@ -50,6 +116,7 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+/* section paragraphe */
 #Apropos{
   font-size: larger;
   margin-top: 40px;
@@ -63,26 +130,6 @@ body {
   flex-wrap: wrap;
 }
 
-button:hover {
-  background-color: rgb(13, 135, 188);
-}
-button {
-  display: inline-block;
-  background-color: #2b0bb6;
-  border-radius: 10px;
-  border: 4px double #cccccc;
-  color: #eeeeee;
-  text-align: center;
-  font-size: 18px;
-  padding: 10px;
-  width: 200px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
 footer{
   bottom: 0%;
   position: absolute;
@@ -118,7 +165,7 @@ footer{
   margin-left: 10%;
 }
 /* Media queries pour les smartphones */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 #titre-portfolio {
   flex-direction: column;
   height: auto;
@@ -140,7 +187,7 @@ body {
 .menu {
   float: none;
   justify-content: center;
-  display: inline-block;
+  display: block;
 }
 .h2,
 .h3 {

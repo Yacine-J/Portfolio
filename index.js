@@ -5,3 +5,8 @@ Apropos.addEventListener("mouseover", () => {
 Apropos.addEventListener("mouseout", () => {
     Apropos.style.backgroundColor = "";
 });
+
+function toggleMenu() {
+    let menu = document.querySelector('.menu');
+    menu.classList.toggle('active');
+  }

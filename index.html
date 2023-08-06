@@ -18,6 +18,7 @@
 
 <body>
     <header>
+        <nav>
         <section id="titre-portfolio">
             <div class="logo">
                 <span class="initiales">JY</span>
@@ -25,14 +26,26 @@
             <div class="titre-header">
                 <h1>PORTFOLIO</h1>
             </div>
-            <nav class="menu">
-            <ul>
-                <button onclick="window.location.href='http://127.0.0.1:5500/CV.html';">EXPERIENCES</button>
-                <button onclick="window.location.href='http://127.0.0.1:5500/projets.html';">PROJETS</button>
-            </ul>
-          </nav>
         </section>
-    </header>
+            <section class="menu-container">
+                <div class="menu-burger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <button onclick="window.location.href='http://127.0.0.1:5500/CV.html';">EXPERIENCES</button>
+                        </li>
+                        <li>
+                            <button onclick="window.location.href='http://127.0.0.1:5500/projets.html';">PROJETS</button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </nav>
+    </header>    
 <main>
 <section id="nom-et-apropos">
     <div class="nom-metier">
