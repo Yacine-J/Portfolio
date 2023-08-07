@@ -2,8 +2,8 @@ body {
   height: 100vh;
   background: linear-gradient(to bottom right, blue, pink);
 }
-/* section header complet */
-#titre-portfolio {
+
+header {
   width: 100%;
   height: 100px;
   background-color:#06525cbc;
@@ -12,9 +12,27 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   z-index: 1;
+  padding: 3rem 5rem;
 }
-/* logo avec initiales */
-.logo{
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+nav a#logo {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -27,99 +45,52 @@ body {
   font-family: 'Lilita One', cursive;
   color: #c58333;
 }
-.initiales{
-  text-transform: uppercase;
-}
-/* titre portfolio rouge */
-.titre-header{
-  font-style: italic;
-  font-family: 'Lilita One', cursive;
-  font-size: 45px;
-  height: 45px;
-  margin-top: 20px;
-  display: flex;
-  flex-grow: 1;
-  align-items: center;
-  justify-content: space-between;
-}
-h1 {
-  color:#fa0505;
-} 
-/* Position fixe pour le conteneur du bouton */
-.menu-container {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-}
-/* Style du bouton burger */
-.menu-burger {
-  width: 40px;
-  height: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-}
-.menu-burger span {
-  width: 100%;
-  height: 4px;
-  border-radius: 50%;
-  background-color: #4cbddfde;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+nav ul a {
+  color: #ffffff;
+  font-weight: 400;
 }
 
-/* Style du menu caché par défaut */
-.menu {
+nav ul a:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+section#home {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+#ham-menu {
   display: none;
-  overflow: hidden; /* Cacher tout contenu dépassant de la boîte */
-  max-height: 0; /* Définir la hauteur initiale à 0 */
-  transition: max-height 0.3s ease; /* Ajouter une transition fluide */
-}
-/* Montrer le menu déroulant lorsqu'il est ouvert */
-.menu.active {
-  display: block;
-  max-height: 200px; /* Définir une hauteur appropriée pour le menu déroulant */
-  background-color: #ff00002d;
-}
-button:hover {
-  background-color: rgb(13, 135, 188);
-}
-button {
-  display: inline-block;
-  background-color: #2b0bb6;
-  border-radius: 10px;
-  border: 4px double #cccccc;
-  color: #eeeeee;
-  text-align: center;
-  font-size: 18px;
-  padding: 10px;
-  width: 230px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
-  margin-top: 20px;
+}
+
+nav ul.active {
+  left: 0;
 }
 /* section nom et apropos */
 .nom-metier{
-  font-size: 35px;
+  font-size: 40px;
+  margin-left: 30px;
   font-style: italic;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lugrasimo', cursive;
   margin-top: 20px;
   color: pink;
 }
 .h2, .h3{
   display: flex;
   flex-wrap: wrap;
+  
 }
 /* section paragraphe */
 #Apropos{
   font-size: larger;
-  margin-top: 40px;
+  margin-top: 60px;
   margin-left: 100px;
   width: 55%;
   position:relative;
@@ -164,45 +135,55 @@ footer{
   position:  relative;
   margin-left: 10%;
 }
-/* Media queries pour les smartphones */
-@media screen and (max-width: 768px) {
-#titre-portfolio {
-  flex-direction: column;
-  height: auto;
-  align-items: center;
+
+@media only screen and (max-width: 768px) {
+  body {
+    height: 100vh;
+  }
+  .h2,
+  .h3 {
+    flex-direction: column;
+  }
+  #Apropos {
+    width: 100%;
+    margin-left: 0;
+  }
+  footer {
+    height: 80px;
+    bottom: 0%;
+  }
+  #ham-menu {
+      display: block;
+      color: #ffffff;
+  }
+
+  nav a#logo,
+  #ham-menu {
+      font-size: 3.2rem;
+  }
+
+  nav ul {
+      background-color: black;
+      position: fixed;
+      left: -100vw;
+      top: 69.6px;
+      width: 100vw;
+      height: calc(100vh - 69.6px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transition: 1s;
+      gap: 0;
+  }
 }
-.logo {
-  margin-bottom: 10px;
-}
-.titre-header {
-  margin-top: 10px;
-  font-size: 30px;
-}
-.initiales {
-  font-size: 24px;
-}
-body {
-  height: 100vh;
-}
-.menu {
-  float: none;
-  justify-content: center;
-  display: block;
-}
-.h2,
-.h3 {
-  flex-direction: column;
-}
-#Apropos {
-  width: 100%;
-  margin-left: 0;
-}
-footer {
-  height: 80px;
-  bottom: 0%;
-}
-button {
-  width: 120px;
-  font-size: 12px;
-}
+
+@media only screen and (max-width: 575px) {
+  header {
+      padding: 2rem 3rem;
+  }
+  nav ul {
+      top: 65.18px;
+      height: calc(100vh - 65.18px);
+  }
 }
