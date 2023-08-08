@@ -1,4 +1,10 @@
-.titre-portfolio {
+
+
+body {
+  height: 250vh;
+  background: linear-gradient(to bottom right, blue, pink);
+}
+header {
   width: 100%;
   height: 100px;
   background-color:#06525cbc;
@@ -6,8 +12,28 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  z-index: 1;
 }
-.logo{
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+nav a {
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+nav a#logo {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -20,50 +46,34 @@
   font-family: 'Lilita One', cursive;
   color: #c58333;
 }
-.initiales{
-  text-transform: uppercase;
+
+nav ul a {
+  color: #ff0101;
+  font-weight: 400;
+  font-family: 'Lugrasimo', cursive;
 }
-.titre-header{
-  font-style: italic;
-  font-family: 'Lilita One', cursive;
-  font-size: 45px;
-  height: 45px;
-  margin-top: 20px;
+
+nav ul a:hover {
+  border-bottom: 2px solid #ffffff;
 }
+
+section#home {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
 h1 {
-  color:#fa0505;
-}    
-.logo-twitter{
-  display: flex;
-  flex-wrap: nowrap;
-  height: 48px;
-  width: 48px;
-  position:  relative;
+  font-size: 4rem;
 }
-button:hover {
-  background-color: rgb(13, 135, 188);
-}
-button {
-  display: inline-block;
-  background-color: #2b0bb6;
-  border-radius: 10px;
-  border: 4px double #cccccc;
-  color: #eeeeee;
-  text-align: center;
-  font-size: 18px;
-  padding: 10px;
-  width: 230px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+
+#ham-menu {
+  display: none;
   cursor: pointer;
-  margin: 5px;
-  margin-top: 20px;
 }
-body {
-  height: 250vh;
-  background: linear-gradient(to bottom right, blue, pink);
+
+nav ul.active {
+  left: 0;
 }
 footer{
   bottom: -150%;
@@ -85,6 +95,13 @@ footer{
 h2 {
   color:#fa0505;
 } 
+.logo-twitter{
+  display: flex;
+  flex-wrap: nowrap;
+  height: 48px;
+  width: 48px;
+  position:  relative;
+}
 .logo-linkedin{
   display: flex;
   flex-wrap: wrap;
@@ -132,20 +149,36 @@ h2 {
 }
 /* Media queries pour les smartphones */
 @media screen and (max-width: 767px) {
-.titre-portfolio {
-  flex-direction: column;
-  height: auto;
-  align-items: center;
-}
-button {
-  width: 120px;
-  font-size: 12px;
-}
-.logo {
-  margin-bottom: 10px;
-  }
+
 body {
   height: 260vh;
+}
+#ham-menu {
+  display: block;
+  color: #bb5858;
+  position: absolute;
+  top: 20px;
+  right: 20px
+}
+
+nav a#logo,
+#ham-menu {
+  font-size: 3.2rem;
+}
+
+nav ul {
+  background-color: #4cbddff3;
+  position: fixed;
+  left: -100vw;
+  top: 100px;
+  width: 100vw;
+  height: 185px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: 1s;
+  gap: 0;
 }
 .conteneur1 {
   width: 50%;

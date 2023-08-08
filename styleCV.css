@@ -1,4 +1,9 @@
-.titre-portfolio {
+body {
+  height: 200vh; 
+  background: linear-gradient(to bottom right, blue, pink);
+}
+
+header {
   width: 100%;
   height: 100px;
   background-color:#06525cbc;
@@ -6,8 +11,28 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  z-index: 1;
 }
-.logo{
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+nav a {
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+nav a#logo {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -20,20 +45,35 @@
   font-family: 'Lilita One', cursive;
   color: #c58333;
 }
-.initiales{
-  text-transform: uppercase;
+
+nav ul a {
+  color: #ff0101;
+  font-weight: 400;
+  font-family: 'Lugrasimo', cursive;
 }
 
-.titre-header{
-  font-style: italic;
-  font-family: 'Lilita One', cursive;
-  font-size: 45px;
-  height: 45px;
-  margin-top: 20px;
+nav ul a:hover {
+  border-bottom: 2px solid #ffffff;
 }
+
+section#home {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
 h1 {
-  color:#fa0505;
-}    
+  font-size: 4rem;
+}
+
+#ham-menu {
+  display: none;
+  cursor: pointer;
+}
+
+nav ul.active {
+  left: 0;
+}
 .logo-twitter{
   display: flex;
   flex-wrap: nowrap;
@@ -42,39 +82,7 @@ h1 {
   position: relative;
     
 }
-#cv img{
-  max-width: 100%;
-  max-height: 150vh;
-  margin-top: 30px;
-  margin-left: 10%;
-  display: flex;
-  flex-wrap: nowrap;
-}
-button:hover {
-  background-color: rgb(13, 135, 188);
-}
-button {
-  display: inline-block;
-  background-color: #2b0bb6;
-  border-radius: 10px;
-  border: 4px double #cccccc;
-  color: #eeeeee;
-  text-align: center;
-  font-size: 18px;
-  padding: 10px;
-  width: 230px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-  margin-top: 20px;
-}
-body {
-  height: 200vh; 
-  background: linear-gradient(to bottom right, blue, pink);
-}
+
 
 footer{
   bottom: -100%;
@@ -96,6 +104,14 @@ footer{
 h2 {
   color:#fa0505;
 } 
+#cv img{
+  max-width: 100%;
+  max-height: 150vh;
+  margin-top: 30px;
+  margin-left: 10%;
+  display: flex;
+  flex-wrap: nowrap;
+}
 .logo-linkedin{
   display: flex;
   flex-wrap: wrap;
@@ -106,24 +122,32 @@ h2 {
 }
 /* Media queries pour les smartphones */
 @media screen and (max-width: 767px) {
-.titre-portfolio {
-  flex-direction: column;
-  height: auto;
-  align-items: center;
+  #ham-menu {
+    display: block;
+    color: #bb5858;
+    position: absolute;
+    top: 20px;
+    right: 20px
 }
-button {
-  width: 120px;
-  font-size: 12px;
+
+nav a#logo,
+#ham-menu {
+    font-size: 3.2rem;
 }
-.logo {
-  margin-bottom: 10px;
-}
-.titre-header {
-  margin-top: 10px;
-  font-size: 30px;
-}
-.initiales {
-  font-size: 24px;
+
+nav ul {
+    background-color: #4cbddff3;
+    position: fixed;
+    left: -100vw;
+    top: 100px;
+    width: 100vw;
+    height: 185px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: 1s;
+    gap: 0;
 }
 #cv img {
   max-height: 120vh;

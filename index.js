@@ -1,11 +1,3 @@
-let Apropos = document.querySelector("#Apropos");
-Apropos.addEventListener("mouseover", () => {
-    Apropos.style.backgroundColor = "lightblue";
-});
-Apropos.addEventListener("mouseout", () => {
-    Apropos.style.backgroundColor = "";
-});
-
 let hamMenuIcon = document.getElementById("ham-menu");
 let navBar = document.getElementById("nav-bar");
 let navLinks = navBar.querySelectorAll("li");
@@ -18,4 +10,12 @@ navLinks.forEach((navLinks) => {
     navBar.classList.remove("active");
     hamMenuIcon.classList.toggle("fa-times");
   });
+});
+
+let Apropos = document.querySelector("#Apropos");
+Apropos.addEventListener("mouseover", () => {
+    Apropos.style.backgroundColor = "lightblue";
+});
+Apropos.addEventListener("mouseout", () => {
+    Apropos.style.backgroundColor = "";
 });
